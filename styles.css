@@ -1,0 +1,199 @@
+/* RESET básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Contenedor general */
+  body {
+    background-color: #f4f4f9;
+    color: #5e4b8b;
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container {
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #9e70a4;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #9e70a4;
+    margin-bottom: 30px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Estilo de los botones */
+  .boton {
+    padding: 15px 30px;
+    background-color: #c397d8;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .boton:hover {
+    background-color: #9e70a4;
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+  }
+  
+  .boton:active {
+    transform: scale(0.95);
+    background-color: #7b4b75;
+  }
+  
+  /* Estilos Galería */
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  /* Animaciones para cada imagen */
+  .animacion1 {
+    animation: animacion1 4s infinite;
+  }
+  
+  @keyframes animacion1 {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.2); opacity: 0.7; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  .animacion2 {
+    animation: animacion2 4s infinite;
+  }
+  
+  @keyframes animacion2 {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .animacion3 {
+    animation: animacion3 4s infinite;
+  }
+  
+  @keyframes animacion3 {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(50px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .animacion4 {
+    animation: animacion4 4s infinite;
+  }
+  
+  @keyframes animacion4 {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-50px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .animacion5 {
+    animation: animacion5 4s infinite;
+  }
+  
+  @keyframes animacion5 {
+    0% { transform: scale(1); opacity: 1; }
+    25% { transform: scale(1.2); opacity: 0.9; }
+    50% { transform: scale(1.5); opacity: 0.7; }
+    75% { transform: scale(1.2); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Estilos para la Tabla */
+  .tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  .tabla th, .tabla td {
+    padding: 12px;
+    border: 1px solid #ddd;
+  }
+  
+  .tabla th {
+    background-color: #9e70a4;
+    color: white;
+    text-align: left;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tabla th:hover {
+    background-color: #7b4b75;
+  }
+  
+  /* Animación para los encabezados */
+  .encabezado {
+    animation: animacionEncabezado 1s ease-in-out infinite;
+  }
+  
+  @keyframes animacionEncabezado {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(10deg); }
+    100% { transform: rotate(0deg); }
+  }
+  
+  /* Animaciones de Página Dinámica */
+  .texto-dinamico {
+    font-size: 1.5rem;
+    color: #9e70a4;
+    animation: moverTexto 3s ease-in-out infinite;
+  }
+  
+  @keyframes moverTexto {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(30px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .imagen-dinamica {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    animation: moverImagen 3s ease-in-out infinite;
+  }
+  
+  @keyframes moverImagen {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
